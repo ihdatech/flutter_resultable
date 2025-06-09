@@ -84,16 +84,6 @@ sealed class Result<F, S> {
 
 ---
 
-## 🛠️ Generated Code
-
-This package uses [freezed](https://pub.dev/packages/freezed). To generate code locally (for contributors):
-
-```bash
-flutter pub run build_runner build --delete-conflicting-outputs
-```
-
----
-
 ## 📄 License
 
 MIT License
