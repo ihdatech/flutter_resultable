@@ -99,7 +99,3 @@ If you find this project helpful, consider [sponsoring me on GitHub](https://git
 ## 🙌 Contributing
 
 Contributions, ideas, and pull requests are welcome. Let’s make `flutter_resultable` better together!
-
-```
-
-
