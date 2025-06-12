@@ -29,7 +29,7 @@ Add this to your `pubspec.yaml`:
 
 ```yaml
 dependencies:
-  flutter_resultable: ^0.0.2
+  flutter_resultable: ^0.0.3
 ````
 
 Then run:
