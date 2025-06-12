@@ -102,7 +102,7 @@ class __$$FailureImplCopyWithImpl<F, S, $Res>
         freezed == failure
             ? _value.failure
             : failure // ignore: cast_nullable_to_non_nullable
-                as F,
+                  as F,
       ),
     );
   }
@@ -245,7 +245,7 @@ class __$$SuccessImplCopyWithImpl<F, S, $Res>
         freezed == success
             ? _value.success
             : success // ignore: cast_nullable_to_non_nullable
-                as S,
+                  as S,
       ),
     );
   }
