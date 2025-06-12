@@ -33,10 +33,7 @@ extension ResultGetters<F, S> on Result<F, S> {
   /// final value = result.getOrElse((failure) => -1);
   /// ```
   S getOrElse(S Function(F failure) fallback) {
-    return when(
-      success: (s) => s,
-      failure: (f) => fallback(f),
-    );
+    return when(success: (s) => s, failure: (f) => fallback(f));
   }
 }
 
@@ -58,13 +55,7 @@ extension ResultFoldExtension<F, S> on Result<F, S> {
   ///
   /// - If the result is a [Failure], executes [onFailure] with the failure value.
   /// - If the result is a [Success], executes [onSuccess] with the success value.
-  T fold<T>(
-    T Function(F failure) onFailure,
-    T Function(S success) onSuccess,
-  ) {
-    return when(
-      failure: onFailure,
-      success: onSuccess,
-    );
+  T fold<T>(T Function(F failure) onFailure, T Function(S success) onSuccess) {
+    return when(failure: onFailure, success: onSuccess);
   }
 }

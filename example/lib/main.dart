@@ -73,10 +73,7 @@ class _MyHomePageState extends State<MyHomePage> {
   ///
   /// 💡 This is where [flutter_resultable] shines — you avoid nested
   /// `try-catch` or null checks by using [fold] and [Result] variants.
-  Future<void> _fetchUser({
-    required String name,
-    required bool fail,
-  }) async {
+  Future<void> _fetchUser({required String name, required bool fail}) async {
     setState(() {
       _loading = true;
       _message = '';
