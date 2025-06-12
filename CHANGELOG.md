@@ -1,3 +1,13 @@
+## 0.0.3
+
+### Changed
+* Updated `freezed_annotation` to `^3.0.0`
+* Updated `freezed` to `^3.0.6`
+* Updated `flutter_lints` to `^6.0.0`
+* Raised minimum SDK constraint to `^3.8.0`
+
+---
+
 ## 0.0.2
 
 ### 🛠 Improvements
