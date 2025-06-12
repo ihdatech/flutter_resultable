@@ -1,16 +1,55 @@
-# example
+# Example: flutter_resultable
 
-A new Flutter project.
+This is a minimal example showing how to use the `flutter_resultable` package.
 
-## Getting Started
+## ✨ Example
 
-This project is a starting point for a Flutter application.
+```dart
+import 'dart:developer' show log;
+import 'dart:math';
 
-A few resources to get you started if this is your first Flutter project:
+import 'package:flutter_resultable/flutter_resultable.dart';
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+Future<void> main() async {
+  final result = await _fetchUser();
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+  result.fold(
+    (error) => log("Failure: $error"),
+    (user) => log("Success: Hello, ${user.name}"),
+  );
+}
+
+class User {
+  final String name;
+  User(this.name);
+}
+
+Future<Result<String, User>> _fetchUser() async {
+  await Future.delayed(Duration(seconds: 1));
+
+  final isSuccess = Random().nextBool();
+  if (isSuccess) {
+    return Result.success(User("Ihda Mukhoyar"));
+  } else {
+    return Result.failure("Network error: connection timeout");
+  }
+}
+````
+
+## 🚀 Run the example
+
+To run:
+
+```bash
+dart run example/main.dart
+```
+
+> This works in both Dart and Flutter projects.
+
+---
+
+## 📦 Learn more
+
+* [`flutter_resultable` on pub.dev](https://pub.dev/packages/flutter_resultable)
+
+```
