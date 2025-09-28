@@ -1,4 +1,5 @@
-import 'package:flutter_resultable/flutter_resultable.dart';
+import 'package:flutter_resultable/src/extensions.dart';
+import 'package:flutter_resultable/src/resultable.dart';
 import 'package:test/test.dart';
 
 void main() {

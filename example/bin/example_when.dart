@@ -1,6 +1,6 @@
 import 'dart:developer';
 
-import 'package:flutter_resultable/flutter_resultable.dart';
+import 'package:flutter_resultable/src/resultable.dart';
 
 /// A simple Dart CLI example demonstrating how to use the `Result` type
 /// from the `flutter_resultable` package to handle operations that may succeed or fail.

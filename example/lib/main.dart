@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_resultable/flutter_resultable.dart';
+import 'package:flutter_resultable/src/extensions.dart';
+import 'package:flutter_resultable/src/resultable.dart';
 
 /// A simple user entity.
 class User {

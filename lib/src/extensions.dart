@@ -1,4 +1,4 @@
-import 'package:flutter_resultable/src/result.dart';
+import 'package:flutter_resultable/src/resultable.dart';
 
 /// Extension that provides convenient utility getters and methods
 /// for working with [Result] instances in a more expressive way.

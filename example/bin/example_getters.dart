@@ -1,6 +1,7 @@
 import 'dart:developer';
 
-import 'package:flutter_resultable/flutter_resultable.dart';
+import 'package:flutter_resultable/src/extensions.dart';
+import 'package:flutter_resultable/src/resultable.dart';
 
 Future<Result<String, int>> divideAsync(int a, int b) async {
   try {
